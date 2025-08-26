@@ -1,40 +1,33 @@
 import parlant.sdk as p
+import asyncio
 
-@p.tool
-async def get_weather(context: p.ToolContext, city: str) -> p.ToolResult:
-    # Your weather API logic here
-    return p.ToolResult(f"Sunny, 72°F in {city}")
+async def add_domain_glossary(agent: p.Agent) -> None:
+    await agent.create_term(
+    name="Office Phone Number",
+    description="The phone number of our office, at +1-234-567-8900",
+  )
 
-@p.tool
-async def get_datetime(context: p.ToolContext) -> p.ToolResult:
-    from datetime import datetime
-    return p.ToolResult(datetime.now())
-
-async def main():
+    await agent.create_term(
+    name="Office Location",
+    description="The location of our office, at 123 Business Rd, Business City, BC 12345",
+  )
+    await agent.create_term(
+    name="Business Hours",
+    description="Our business hours are Monday to Friday, 9am to 5pm",
+  )
+    await agent.create_term(
+    name="Charles Xavier",
+    synonyms=["Professor X"],
+    description="The renowned doctor who specializes in neurology",
+  )
+async def main() -> None:
     async with p.Server() as server:
         agent = await server.create_agent(
-            name="WeatherBot",
-            description="Helpful weather assistant"
+            name="Healthcare Agent",
+            description="Is empathetic and calming to the patient.",
         )
 
-        # Have the agent's context be updated on every response (though
-        # update interval is customizable) using a context variable.
-        await agent.create_variable(name="current-datetime", tool=get_datetime)
-
-        # Control and guide agent behavior with natural language
-        await agent.create_guideline(
-            condition="User asks about weather",
-            action="Get current weather and provide a friendly response with suggestions",
-            tools=[get_weather]
-        )
-
-        # Add other (reliably enforced) behavioral modeling elements
-        # ...
-
-        # 🎉 Test playground ready at http://localhost:8800
-        # Integrate the official React widget into your app,
-        # or follow the tutorial to build your own frontend!
+        await add_domain_glossary(agent)
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
