@@ -2,7 +2,7 @@ import parlant.sdk as p
 import asyncio
 import os
 from dotenv import load_dotenv
-from gemini_service import load_gemini_nlp_service
+from gemini_working import load_gemini_nlp_service
 
 # Load environment variables from .env file
 load_dotenv()

@@ -11,4 +11,5 @@ wheels/
 
 .env
 
-
+./parlant-data/
+.parlant-log/
