@@ -308,7 +308,7 @@ Only include categories that are clearly violated. Be conservative - only flag o
 class GeminiNLPService(p.NLPService):
     """Custom NLP service using Google Gemini models."""
     
-    def __init__(self, logger: p.Logger, model_name: str = "gemini-1.5-flash"):
+    def __init__(self, logger: p.Logger, model_name: str = "gemini-2.0-flash-exp"):
         self._logger = logger
         self._model_name = model_name
     
