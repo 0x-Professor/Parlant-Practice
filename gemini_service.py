@@ -42,7 +42,7 @@ class GeminiTokenizer(p.EstimatingTokenizer):
 class GeminiSchematicGenerator(p.SchematicGenerator[T], Generic[T]):
     """Schematic generator using Google's Gemini API."""
     
-    def __init__(self, model_name: str = "gemini-1.5-flash", logger: p.Logger = None):
+    def __init__(self, model_name: str = "gemini-2.0-flash-exp", logger: p.Logger = None):
         self._model_name = model_name
         self._logger = logger
         self._tokenizer = GeminiTokenizer()
@@ -167,8 +167,10 @@ Important: Return ONLY the JSON object, no additional text or formatting.
     @property
     def max_tokens(self) -> int:
         """Return the maximum number of tokens in the underlying model's context window."""
-        # Gemini 1.5 models have large context windows
-        if "1.5" in self._model_name:
+        # Gemini 2.0 models have very large context windows
+        if "2.0" in self._model_name:
+            return 2097152  # 2M tokens for Gemini 2.0
+        elif "1.5" in self._model_name:
             return 1048576  # 1M tokens for Gemini 1.5
         return 30720  # Default for older models
     
