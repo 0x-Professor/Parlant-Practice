@@ -1,7 +1,11 @@
 import parlant.sdk as p
 import asyncio
 import os
+from dotenv import load_dotenv
 from gemini_service import load_gemini_nlp_service
+
+# Load environment variables from .env file
+load_dotenv()
 
 async def add_domain_glossary(agent: p.Agent) -> None:
     """Add domain-specific terms to the agent's knowledge base."""

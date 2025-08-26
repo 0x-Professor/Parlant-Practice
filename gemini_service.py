@@ -12,9 +12,13 @@ from typing import Any, Generic, Mapping, Optional, Sequence, TypeVar, cast, get
 import google.generativeai as genai
 import numpy as np
 import tiktoken
+from dotenv import load_dotenv
 from google.generativeai.types import GenerateContentResponse
 
 import parlant.sdk as p
+
+# Load environment variables from .env file
+load_dotenv()
 
 T = TypeVar('T')
 
