@@ -18,3 +18,160 @@
 [2m2025-08-26T18:00:19.246272Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
 [2m2025-08-26T18:00:19.246439Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
 [2m2025-08-26T18:00:19.246635Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
+[2m2025-08-26T18:00:55.783219Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process][MessageEventComposer][CannedResponseGenerator] Generation failed: 1 validation error for CannedResponsePreambleSchema
+preamble
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing[0m
+[2m2025-08-26T18:00:55.835402Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process][MessageEventComposer][CannedResponseGenerator] Preamble generation failed[0m
+[2m2025-08-26T18:00:55.836550Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process][MessageEventComposer][CannedResponseGenerator] Traceback (most recent call last):
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\loggers.py", line 277, in operation
+    yield
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\loggers.py", line 411, in operation
+    yield
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\canned_response_generator.py", line 496, in generate_preamble
+    return await self._do_generate_preamble(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\canned_response_generator.py", line 639, in _do_generate_preamble
+    canrep = await self._canrep_fluid_preamble_generator.generate(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        prompt=prompt_builder, hints={"temperature": 0.1}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+   File "U:\Parlant-Practice\starter\gemini_service.py", line 75, in generate
+   File "C:\Program Files\Python313\Lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj, strict=strict, from_attributes=from_attributes, context=context, by_alias=by_alias, by_name=by_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+ pydantic_core._pydantic_core.ValidationError: 1 validation error for CannedResponsePreambleSchema
+preamble
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+[0m
+[2m2025-08-26T18:00:55.852945Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process] Processing context for session 8CsImV2ZCc failed[0m
+[2m2025-08-26T18:00:55.854692Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process] Traceback (most recent call last):
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\loggers.py", line 277, in operation
+    yield
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\loggers.py", line 411, in operation
+    yield
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 173, in process
+    await self._do_process(loaded_context)
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 274, in _do_process
+    iteration_result = await self._run_preparation_iteration(context, preamble_task)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 454, in _run_preparation_iteration
+    result = await self._run_initial_preparation_iteration(context, preamble_task)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 556, in _run_initial_preparation_iteration
+    if not await preamble_task:
+           ^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 830, in preamble_task
+    if await self._generate_preamble(context):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\engine.py", line 861, in _generate_preamble
+    for event_generation_result in await self._get_message_composer(
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        context.agent
+        ^^^^^^^^^^^^^
+    ).generate_preamble(context=context):
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\canned_response_generator.py", line 496, in generate_preamble
+    return await self._do_generate_preamble(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   File "C:\Program Files\Python313\Lib\site-packages\parlant\core\engines\alpha\canned_response_generator.py", line 639, in _do_generate_preamble
+    canrep = await self._canrep_fluid_preamble_generator.generate(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        prompt=prompt_builder, hints={"temperature": 0.1}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+   File "U:\Parlant-Practice\starter\gemini_service.py", line 75, in generate
+   File "C:\Program Files\Python313\Lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        obj, strict=strict, from_attributes=from_attributes, context=context, by_alias=by_alias, by_name=by_name
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+ pydantic_core._pydantic_core.ValidationError: 1 validation error for CannedResponsePreambleSchema
+preamble
+  Field required [type=missing, input_value={}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+[0m
+[2m2025-08-26T18:00:55.856865Z[0m [[31m[1merror    [0m] [1m[R4lkxVyrFoY::process] Processing error: ['Traceback (most recent call last):\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 173, in process\n'
+ '    await self._do_process(loaded_context)\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 274, in _do_process\n'
+ '    iteration_result = await self._run_preparation_iteration(context, '
+ 'preamble_task)\n'
+ '                       '
+ '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 454, in _run_preparation_iteration\n'
+ '    result = await self._run_initial_preparation_iteration(context, '
+ 'preamble_task)\n'
+ '             '
+ '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 556, in _run_initial_preparation_iteration\n'
+ '    if not await preamble_task:\n'
+ '           ^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 830, in preamble_task\n'
+ '    if await self._generate_preamble(context):\n'
+ '       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\engine.py", '
+ 'line 861, in _generate_preamble\n'
+ '    for event_generation_result in await self._get_message_composer(\n'
+ '                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
+ '        context.agent\n'
+ '        ^^^^^^^^^^^^^\n'
+ '    ).generate_preamble(context=context):\n'
+ '    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\canned_response_generator.py", '
+ 'line 496, in generate_preamble\n'
+ '    return await self._do_generate_preamble(context)\n'
+ '           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\parlant\\core\\engines\\alpha\\canned_response_generator.py", '
+ 'line 639, in _do_generate_preamble\n'
+ '    canrep = await self._canrep_fluid_preamble_generator.generate(\n'
+ '             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
+ '        prompt=prompt_builder, hints={"temperature": 0.1}\n'
+ '        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
+ '    )\n'
+ '    ^\n',
+ '  File "U:\\Parlant-Practice\\starter\\gemini_service.py", line 75, in '
+ 'generate\n',
+ '  File "C:\\Program '
+ 'Files\\Python313\\Lib\\site-packages\\pydantic\\main.py", line 705, in '
+ 'model_validate\n'
+ '    return cls.__pydantic_validator__.validate_python(\n'
+ '           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n'
+ '        obj, strict=strict, from_attributes=from_attributes, '
+ 'context=context, by_alias=by_alias, by_name=by_name\n'
+ '        '
+ '^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n'
+ '    )\n'
+ '    ^\n',
+ 'pydantic_core._pydantic_core.ValidationError: 1 validation error for '
+ 'CannedResponsePreambleSchema\n'
+ 'preamble\n'
+ '  Field required [type=missing, input_value={}, input_type=dict]\n'
+ '    For further information visit '
+ 'https://errors.pydantic.dev/2.11/v/missing\n'][0m
+[2m2025-08-26T18:01:14.276223Z[0m [[33m[1mwarning  [0m] [1m[Rul7MMBOc56] HTTP Request: GET /sessions/8CsImV2ZCc/events cancelled after 18.405 seconds[0m
+[2m2025-08-26T18:01:14.277092Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
+[2m2025-08-26T18:01:14.280648Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m

@@ -334,5 +334,5 @@ def load_gemini_nlp_service(container: p.Container) -> p.NLPService:
     """Factory function to create and configure the Gemini NLP service."""
     return GeminiNLPService(
         logger=container[p.Logger],
-        model_name=os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
+        model_name=os.environ.get("GEMINI_MODEL", "gemini-2.0-flash-exp")
     )
