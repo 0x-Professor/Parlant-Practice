@@ -2,7 +2,7 @@ import parlant.sdk as p
 import asyncio
 import os
 from dotenv import load_dotenv
-from gemini_service import load_gemini_nlp_service
+from gemini_working import load_gemini_nlp_service
 
 # Load environment variables from .env file
 load_dotenv()
@@ -34,54 +34,30 @@ async def add_domain_glossary(agent: p.Agent) -> None:
     
     print("✅ Domain glossary added successfully!")
 
-async def create_sample_conversation(agent: p.Agent) -> None:
-    """Create a sample conversation to demonstrate the agent."""
-    print("💬 Creating sample conversation...")
-    
-    try:
-        # Create a new conversation session
-        session = await agent.create_conversation(
-            customer_id="demo-customer-001"
-        )
-        
-        # Send a message from the customer
-        await session.send_customer_message("Hello, I need help with scheduling an appointment.")
-        
-        print(f"✅ Sample conversation created with ID: {session.id}")
-        print("   Customer message: 'Hello, I need help with scheduling an appointment.'")
-        
-        # Get agent response
-        messages = await session.get_messages()
-        if len(messages) > 1:
-            print(f"   Agent response: {messages[-1].content}")
-        
-    except Exception as e:
-        print(f"⚠️  Could not create conversation: {e}")
-
 async def main() -> None:
     """Main application entry point."""
-    print("🚀 Parlant Healthcare Agent with Gemini AI")
-    print("=" * 50)
+    print("🚀 Parlant Healthcare Agent Setup")
+    print("=" * 40)
     
     # Check if GEMINI_API_KEY is set
-    if not os.environ.get("GEMINI_API_KEY"):
+    gemini_api_key = os.environ.get("GEMINI_API_KEY")
+    if not gemini_api_key:
         print("❌ Error: GEMINI_API_KEY environment variable is required")
         print("\n📋 To set up your environment:")
-        print("1. Run: python setup_env.py")
+        print("1. Make sure your .env file contains:")
+        print("   GEMINI_API_KEY=your-key-here")
+        print("   GEMINI_MODEL=gemini-2.0-flash-exp")
         print("2. Or visit: https://makersuite.google.com/app/apikey")
-        print("3. Set your API key: $env:GEMINI_API_KEY = 'your-key-here'")
         return
     
-    gemini_model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash")
-    print(f"🤖 Using Gemini model: {gemini_model}")
-    print(f"🔑 API Key configured: {os.environ['GEMINI_API_KEY'][:10]}...")
+    print(f"🔑 API Key configured: {gemini_api_key[:10]}...")
     
     try:
         # Create server with custom Gemini NLP service
         print("\n🔄 Starting Parlant server with Gemini NLP service...")
         
         async with p.Server(nlp_service=load_gemini_nlp_service) as server:
-            print("✅ Server started successfully!")
+            print("✅ Server started successfully with Gemini!")
             
             # Create healthcare agent
             print("\n👨‍⚕️ Creating healthcare agent...")
@@ -97,19 +73,16 @@ async def main() -> None:
             # Add domain knowledge
             await add_domain_glossary(agent)
             
-            # Create a sample conversation
-            await create_sample_conversation(agent)
-            
             print(f"\n🎉 Setup completed successfully!")
-            print(f"\n📖 Your healthcare agent is now ready to use with Gemini AI!")
-            print(f"   - Agent uses Gemini {gemini_model} for natural language processing")
-            print(f"   - Embeddings powered by Google's text-embedding-004")
-            print(f"   - Content moderation via Gemini safety filters")
+            print(f"📖 Your healthcare agent is now using Gemini AI!")
+            print(f"   - Text generation: {os.environ.get('GEMINI_MODEL', 'gemini-1.5-flash')}")
+            print(f"   - Embeddings: Google text-embedding-004")
+            print(f"   - Content moderation: Built-in safety")
             
             print(f"\n🔧 Next steps:")
-            print(f"   1. Test the integration: python test_gemini.py")
-            print(f"   2. Build your own conversation flows")
-            print(f"   3. Customize the agent's knowledge and behavior")
+            print(f"   1. Test conversations with your agent")
+            print(f"   2. Customize agent knowledge and behavior")
+            print(f"   3. Build conversation flows")
             
             # Keep the server running briefly to show it's working
             print(f"\n⏳ Server running for 5 seconds to demonstrate...")
@@ -125,9 +98,9 @@ async def main() -> None:
             print("   3. Your API key has sufficient quota")
         else:
             print("\n💡 For troubleshooting:")
-            print("   1. Run: python test_gemini.py")
-            print("   2. Check the parlant-data/parlant.log file")
-            print("   3. Verify your internet connection")
+            print("   1. Check your .env file")
+            print("   2. Verify your internet connection")
+            print("   3. Check the parlant-data/parlant.log file")
 
 if __name__ == "__main__":
     asyncio.run(main())
