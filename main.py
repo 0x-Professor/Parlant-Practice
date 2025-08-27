@@ -3,6 +3,7 @@ import asyncio
 import os
 from dotenv import load_dotenv
 from gemini_service import load_gemini_nlp_service
+from datetime import datetime
 
 load_dotenv()
 
@@ -36,7 +37,18 @@ async def create_sample_conversation(agent: p.Agent) -> None:
         await session.send_customer_message("Hello, I need help with scheduling an appointment.")
     except Exception:
         pass
-    
+@p.tool
+async def get_upcoming_slots(context: p.ToolContext) -> p.ToolResult:
+    """Get upcoming appointment slots."""
+    return p.ToolResult(data=["Monday 10 AM", "Tuesday 2 PM", "Wednesday 1 PM"])
+@p.tool
+async def get_later_slots(context: p.ToolContext) -> p.ToolResult:
+    """Get later appointment slots."""
+    return p.ToolResult(data=["Thursday 3 PM", "Friday 11 AM"])
+@p.tool
+async def schedule_appointment(context: p.ToolContext) -> p.ToolResult:
+    """Schedule an appointment."""
+    return p.ToolResult(data=["Appointment scheduled for Monday 10 AM"])
 async def main() -> None:
     if not os.environ.get("GEMINI_API_KEY"):
         print("Error: GEMINI_API_KEY environment variable is required")
