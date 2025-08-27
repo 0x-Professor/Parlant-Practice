@@ -903,3 +903,13 @@ preamble
 [2m2025-08-27T18:35:12.167635Z[0m [[33m[1mwarning  [0m] [1m[REY4eXnq0Zf] HTTP Request: GET /sessions/8RdkVRDI9D/events cancelled after 21.138 seconds[0m
 [2m2025-08-27T18:35:12.172230Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
 [2m2025-08-27T18:35:12.190171Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-08-27T18:45:10.388997Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-08-27T18:45:10.389331Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\parlant-data'[0m
+[2m2025-08-27T18:45:10.391187Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-08-27T18:45:16.292859Z[0m [[32m[1minfo     [0m] [1m[<main>] .-----------------------------------------.[0m
+[2m2025-08-27T18:45:16.293486Z[0m [[32m[1minfo     [0m] [1m[<main>] | Server is ready for some serious action |[0m
+[2m2025-08-27T18:45:16.293821Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
+[2m2025-08-27T18:45:16.294103Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
+[2m2025-08-27T18:45:16.294322Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
+[2m2025-08-27T18:45:16.353111Z[0m [[32m[1minfo     [0m] [1m[RDGPPcanVCB] Session not found (id='8RdkVRDI9D')[0m
+[2m2025-08-27T18:45:39.173058Z[0m [[32m[1minfo     [0m] [1m[RrY371nKisC::process] Processing context for session MeI9Uo9uNf finished in 7.716 seconds[0m

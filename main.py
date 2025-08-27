@@ -37,3 +37,24 @@ async def create_sample_conversation(agent: p.Agent) -> None:
     except Exception:
         pass
     
+async def main() -> None:
+    if not os.environ.get("GEMINI_API_KEY"):
+        print("Error: GEMINI_API_KEY environment variable is required")
+        return
+    
+    try:
+        async with p.Server(nlp_service=load_gemini_nlp_service) as server:
+            agent = await server.create_agent(
+                name="Healthcare Agent",
+                description="An empathetic and calming healthcare assistant that helps patients with appointments, information, and basic medical questions.",
+            )
+            
+            await add_domain_glossary(agent)
+            await create_sample_conversation(agent)
+            await asyncio.sleep(5)
+            
+    except Exception as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    asyncio.run(main())
