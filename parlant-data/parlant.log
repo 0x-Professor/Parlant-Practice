@@ -900,3 +900,6 @@ preamble
 [2m2025-08-27T17:47:37.535477Z[0m [[32m[1minfo     [0m] [1m[RFSeMnxDO25::process] Processing context for session 8RdkVRDI9D finished in 12.992 seconds[0m
 [2m2025-08-27T17:49:13.688515Z[0m [[32m[1minfo     [0m] [1m[ReCcm7uBgZp::process] Processing context for session 8RdkVRDI9D finished in 11.466 seconds[0m
 [2m2025-08-27T17:50:49.638859Z[0m [[32m[1minfo     [0m] [1m[RN3xJyW62dk::process] Processing context for session 8RdkVRDI9D finished in 11.198 seconds[0m
+[2m2025-08-27T18:35:12.167635Z[0m [[33m[1mwarning  [0m] [1m[REY4eXnq0Zf] HTTP Request: GET /sessions/8RdkVRDI9D/events cancelled after 21.138 seconds[0m
+[2m2025-08-27T18:35:12.172230Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
+[2m2025-08-27T18:35:12.190171Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
