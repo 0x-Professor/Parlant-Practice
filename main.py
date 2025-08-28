@@ -104,6 +104,10 @@ async def main() -> None:
             
             await add_domain_glossary(agent)
             await create_sample_conversation(agent)
+            await create_scheduling_journey(server, agent)
+
+
+
             await asyncio.sleep(5)
             
     except Exception as e:
