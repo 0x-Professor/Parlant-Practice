@@ -49,6 +49,47 @@ async def get_later_slots(context: p.ToolContext) -> p.ToolResult:
 async def schedule_appointment(context: p.ToolContext) -> p.ToolResult:
     """Schedule an appointment."""
     return p.ToolResult(data=["Appointment scheduled for Monday 10 AM"])
+
+async def create_scheduling_journey(server: p.Server, agent: p.Agent) -> p.Journey:
+    journey = await agent.create_journey(
+        title = "Schedule an Appointment",
+        description = "Help the patients to schedule an appointment.",
+        conditions = ["The patient wants to schedule an appointment"],
+    )
+# First, determine the reason for the appointment
+    t0 = await journey.initial_state.transition_to(chat_state="Determine the reason for the visit")
+    t1 = await t0.target.transition_to(tool_state = get_upcoming_slots)
+    t2 = await t1.target.transition_to(chat_state= "List available times and ask which ones works for them")
+    t3 = await t2.target.transition_to(
+    chat_state="Confirm the details with the patient before scheduling",
+    condition="The patient picks a time",
+  )
+    t4 = await t3.target.transition_to(
+    tool_state=schedule_appointment,
+    condition="The patient confirms the details",
+  )
+    t5 = await t4.target.transition_to(chat_state="Confirm the appointment has been scheduled")
+    await t5.target.transition_to(state=p.END_JOURNEY)
+
+  # Otherwise, if they say none of the times work, ask for later slots
+    t6 = await t2.target.transition_to(
+    tool_state=get_later_slots,
+    condition="None of those times work for the patient",
+  )
+    t7 = await t6.target.transition_to(chat_state="List later times and ask if any of them works")
+
+  # Transition back to our happy-path if they pick a time
+    await t7.target.transition_to(state=t3.target, condition="The patient picks a time")
+
+  # Otherwise, ask them to call the office
+    t8 = await t7.target.transition_to(
+    chat_state="Ask the patient to call the office to schedule an appointment",
+    condition="None of those times work for the patient either",
+  )
+    await t8.target.transition_to(state=p.END_JOURNEY)
+
+    return journey
+    
 async def main() -> None:
     if not os.environ.get("GEMINI_API_KEY"):
         print("Error: GEMINI_API_KEY environment variable is required")
