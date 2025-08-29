@@ -1,5 +1,169 @@
 {
-  "guideline_evaluations": [],
+  "guideline_evaluations": [
+    {
+      "id": "685cb48d40f72d4d300506f6e83d5b2c",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": true,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "b497280d42ffb69387766b165547169e",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer calls the office immediately",
+          "agent_action": "The agent tells the customer to call the office immediately"
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "30a8509d400fd49632a95117ff9e063e",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer provides the reason for their visit",
+          "agent_action": "The agent attempts to determine the reason for the visit"
+        },
+        "agent_intention_condition": "You are likely to determine the reason for the visit",
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    },
+    {
+      "id": "1a02f57bbe15576fbcf855b9b6374dcf",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer indicates which of the listed times works for them",
+          "agent_action": "The agent lists available times and asks the customer which ones work for them"
+        },
+        "agent_intention_condition": "You are likely to schedule an appointment",
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    },
+    {
+      "id": "016f9e482a2393c1ccc51449b938d07b",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The patient confirms the details are correct",
+          "agent_action": "The agent confirms the details with the patient before scheduling"
+        },
+        "agent_intention_condition": null,
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    },
+    {
+      "id": "f718fd7f0fd2afc4c04e10fa64e8f164",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": "You are likely to confirm the appointment has been scheduled",
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    },
+    {
+      "id": "93fab5bf3ad66ae44ad056069e9241d4",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer indicates whether any of the listed times work for them.",
+          "agent_action": "The agent lists later times and asks the customer if any of them works."
+        },
+        "agent_intention_condition": "You are likely to list later times and ask if any of them works",
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    },
+    {
+      "id": "5e0831e5c31924fd868916242ac875c2",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": "You are likely to use the tool get_upcoming_slots",
+        "internal_action": null,
+        "tool_running_only": true
+      }
+    },
+    {
+      "id": "5d9f5eb9ace2bc54a4a4cba8e759ad63",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer confirms the appointment details and agrees to schedule the appointment.",
+          "agent_action": "The agent uses the tool schedule_appointment to schedule the appointment."
+        },
+        "agent_intention_condition": null,
+        "internal_action": null,
+        "tool_running_only": true
+      }
+    },
+    {
+      "id": "647d33337fc1f357f36800b1c517226d",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null,
+        "tool_running_only": true
+      }
+    },
+    {
+      "id": "e0d0918c162ab267762f1bc9151a9999",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The patient calls the office to schedule an appointment",
+          "agent_action": "The agent asks the patient to call the office to schedule an appointment"
+        },
+        "agent_intention_condition": null,
+        "internal_action": null,
+        "tool_running_only": false
+      }
+    }
+  ],
   "journey_evaluations": [
     {
       "id": "55e64c77f512f93083c855a98987b2fe",
