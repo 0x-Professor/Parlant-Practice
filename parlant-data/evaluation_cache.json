@@ -1,4 +1,11 @@
 {
   "guideline_evaluations": [],
-  "journey_evaluations": []
+  "journey_evaluations": [
+    {
+      "id": "55e64c77f512f93083c855a98987b2fe",
+      "version": "3.0.1",
+      "node_properties": {},
+      "edge_properties": {}
+    }
+  ]
 }

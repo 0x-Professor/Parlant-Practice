@@ -87,6 +87,10 @@ async def create_scheduling_journey(server: p.Server, agent: p.Agent) -> p.Journ
     condition="None of those times work for the patient either",
   )
     await t8.target.transition_to(state=p.END_JOURNEY)
+    await journey.create_guideline(
+    condition="The patient says their visit is urgent",
+    action="Tell them to call the office immediately",
+  )
 
     return journey
     
