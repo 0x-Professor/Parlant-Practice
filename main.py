@@ -151,9 +151,8 @@ async def main() -> None:
             
             await add_domain_glossary(agent)
             await create_sample_conversation(agent)
-            await create_scheduling_journey(server, agent)
-
-
+            scheduling_journey = await create_scheduling_journey(server, agent)
+            lab_results_journey = await create_lab_results_journey(server, agent)
 
             await asyncio.sleep(5)
             
