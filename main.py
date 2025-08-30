@@ -93,7 +93,50 @@ async def create_scheduling_journey(server: p.Server, agent: p.Agent) -> p.Journ
   )
 
     return journey
+@p.tool
+async def get_lab_results(context: p.ToolContext) -> p.ToolResult:
+    """Get lab results for a patient."""
+    lab_results = await MY_DB.get_lab_results(context.customer_id)
+
+    if lab_results is None:
+        return p.ToolResult(data="No lab results found for this patient.")
+
+    return p.ToolResult(data={
+    "report": lab_results.report,
+    "prognosis": lab_results.prognosis,
+    })
     
+async def create_lab_results_journey(server: p.Server, agent: p.Agent) -> p.Journey:
+    journey = await agent.create_journey(
+        title = "Get Lab Results",
+        description = "Help the patients to get their lab results.",
+        conditions = ["The patient wants to see their lab results"],
+    )
+    t0 = await journey.initial_state.transition_to(tool_state = get_lab_results)
+    await t0.target.transition_to(
+    chat_state="Tell the patient that the results are not available yet, and to try again later",
+    condition="The lab results could not be found",
+  )
+
+    await t0.target.transition_to(
+    chat_state="Explain the lab results to the patient - that they are normal",
+    condition="The lab results are good - i.e., nothing to worry about",
+  )
+
+    await t0.target.transition_to(
+    chat_state="Present the results and ask them to call the office "
+     "for clarifications on the results as you are not a doctor",
+    condition="The lab results are not good - i.e., there's an issue with the patient's health",
+  )
+
+  # Handle edge cases with guidelines...
+
+    await agent.create_guideline(
+    condition="The patient presses you for more conclusions about the lab results",
+    action="Assertively tell them that you cannot help and they should call the office"
+  )
+
+    return journey
 async def main() -> None:
     if not os.environ.get("GEMINI_API_KEY"):
         print("Error: GEMINI_API_KEY environment variable is required")
