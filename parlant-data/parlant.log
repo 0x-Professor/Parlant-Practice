@@ -10102,3 +10102,8 @@ The above exception was the direct cause of the following exception:
 [2m2025-08-30T17:34:27.214680Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
 [2m2025-08-30T17:34:27.215162Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\parlant-data'[0m
 [2m2025-08-30T17:34:27.219404Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-08-30T17:57:06.440218Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (8)[0m
+[2m2025-08-30T17:57:06.440873Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-08-30T17:57:16.277067Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-08-30T17:57:16.277367Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\parlant-data'[0m
+[2m2025-08-30T17:57:16.280173Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
