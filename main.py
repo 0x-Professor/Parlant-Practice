@@ -153,7 +153,12 @@ async def main() -> None:
             await create_sample_conversation(agent)
             scheduling_journey = await create_scheduling_journey(server, agent)
             lab_results_journey = await create_lab_results_journey(server, agent)
+            status_inquiry = await agent.create_observation(
+                "The patient asks to follow up on their visit, but it's not clear in which way",
+                )
 
+    # Use this observation to disambiguate between the two journeys
+            await status_inquiry.disambiguate([scheduling_journey, lab_results_journey])
             await asyncio.sleep(5)
             
     except Exception as e:
