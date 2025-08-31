@@ -10136,3 +10136,19 @@ The above exception was the direct cause of the following exception:
 [2m2025-08-31T17:45:56.623381Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
 [2m2025-08-31T17:45:56.623635Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
 [2m2025-08-31T17:45:56.623872Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
+[2m2025-08-31T17:46:23.134453Z[0m [[32m[1minfo     [0m] [1m[R0gPkm9FSGS::process] Processing context for session tYtphwr3n6 finished in 7.876 seconds[0m
+[2m2025-08-31T17:46:39.078351Z[0m [[32m[1minfo     [0m] [1m[RKpapjZEf80::process] Processing context for session tYtphwr3n6 finished in 6.906 seconds[0m
+[2m2025-08-31T18:21:33.402228Z[0m [[33m[1mwarning  [0m] [1m[RjfgeW660OH] HTTP Request: GET /sessions/tYtphwr3n6/events cancelled after 58.947 seconds[0m
+[2m2025-08-31T18:21:33.405651Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
+[2m2025-08-31T18:21:33.408502Z[0m [[33m[1mwarning  [0m] [1m[Rccp0DnKNNU::process] Processing cancelled[0m
+[2m2025-08-31T18:21:33.432791Z[0m [[33m[1mwarning  [0m] [1m[Rccp0DnKNNU::process] Processing context for session tYtphwr3n6 cancelled after 2048.074 seconds[0m
+[2m2025-08-31T18:21:33.436571Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-08-31T18:22:34.376583Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-08-31T18:22:34.376927Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\parlant-data'[0m
+[2m2025-08-31T18:22:34.379812Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-08-31T18:22:35.398822Z[0m [[32m[1minfo     [0m] [1m[<main>] .-----------------------------------------.[0m
+[2m2025-08-31T18:22:35.399440Z[0m [[32m[1minfo     [0m] [1m[<main>] | Server is ready for some serious action |[0m
+[2m2025-08-31T18:22:35.399793Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
+[2m2025-08-31T18:22:35.400124Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
+[2m2025-08-31T18:22:35.400462Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
+[2m2025-08-31T18:22:51.333166Z[0m [[32m[1minfo     [0m] [1m[Rwkh0kpslox::process] Processing context for session 2c2SV3AnfP finished in 7.599 seconds[0m
