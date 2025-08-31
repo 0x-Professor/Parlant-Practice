@@ -191,6 +191,7 @@ async def main() -> None:
             condition="The patient asks about insurance",
             action="List the insurance providers we accept, and tell them to call the office for more details",
             tools=[get_insurance_providers],
+            composition_mode=p.CompositionMode.STRICT,
         )
 
         await agent.create_guideline(
