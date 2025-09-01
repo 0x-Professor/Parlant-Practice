@@ -176,7 +176,8 @@ async def main() -> None:
                 description="An empathetic and calming healthcare assistant that helps patients with appointments, information, and basic medical questions.",
             )
             await server.create_customer(name="Professor")
-
+            vip_tag = await server.create_tag(name="VIP")
+            await server.create_customer(name="VIP Patient", tags=[vip_tag.id])
             await add_domain_glossary(agent)
         scheduling_journey = await create_scheduling_journey(server, agent)
         lab_results_journey = await create_lab_results_journey(server, agent)

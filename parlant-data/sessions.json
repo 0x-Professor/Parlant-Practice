@@ -72,6 +72,25 @@
           "journey_paths": {}
         }
       ]
+    },
+    {
+      "id": "UUJrNnL85n",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:15.307491+00:00",
+      "customer_id": "Pz05iIwvvY",
+      "agent_id": "8Ah09cwDN4",
+      "mode": "auto",
+      "title": "New Conversation",
+      "consumption_offsets": {
+        "client": 0
+      },
+      "agent_states": [
+        {
+          "correlation_id": "RQiuaLxLxrx::process",
+          "applied_guideline_ids": [],
+          "journey_paths": {}
+        }
+      ]
     }
   ],
   "events": [
@@ -939,6 +958,179 @@
         "data": {}
       },
       "deleted": false
+    },
+    {
+      "id": "mQGPNrXet3",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:15.342904+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "customer",
+      "kind": "message",
+      "offset": 0,
+      "correlation_id": "RQiuaLxLxrx",
+      "data": {
+        "message": "hi how are you doing today",
+        "participant": {
+          "id": "Pz05iIwvvY",
+          "display_name": "VIP Patient"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "LAsL2uyZ0q",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:15.346596+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 1,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "2PoA1SnNl3",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:18.096592+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 2,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "rtJbSw82fi",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:18.946582+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 3,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "message": "Hello.",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        },
+        "tags": [
+          "__preamble__"
+        ]
+      },
+      "deleted": false
+    },
+    {
+      "id": "ZFkGmEbKwU",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:18.955891+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 4,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "i5n2380D9L",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:20.859140+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 5,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "processing",
+        "data": {
+          "stage": "Interpreting"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "mU1uh7RhPD",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:21.873200+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 6,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "mGkUBz01F1",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:22.945468+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 7,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "message": "I'm doing well, thank you for asking. How can I help you today?",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "dozDBiwWQn",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:22.952678+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 8,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "2o4PAMb7wj",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:50:22.960328+00:00",
+      "session_id": "UUJrNnL85n",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 9,
+      "correlation_id": "RQiuaLxLxrx::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
     }
   ],
   "inspections": [
@@ -1249,6 +1441,70 @@
               "synonyms": [
                 "Professor X"
               ]
+            }
+          ],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 0.0,
+              "batches": []
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "3xgdmYtbfZ",
+      "version": "0.6.0",
+      "session_id": "UUJrNnL85n",
+      "correlation_id": "RQiuaLxLxrx::process",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "CannedResponseDraftSchema",
+              "model": "gemini-2.0-flash",
+              "duration": 1.0599250793457031,
+              "usage": {
+                "input_tokens": 2682,
+                "output_tokens": 59,
+                "extra": null
+              }
+            }
+          ],
+          "generation_names": [
+            "draft"
+          ],
+          "messages": [
+            "I'm doing well, thank you for asking. How can I help you today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [
+            {
+              "id": "G5yvu59JyY",
+              "name": "Charles Xavier",
+              "description": "The doctor who specializes in neurology and is available on Mondays and Tuesdays.",
+              "synonyms": [
+                "Professor X"
+              ]
+            },
+            {
+              "id": "8X9GYbr9T7",
+              "name": "Office Phone Number",
+              "description": "The phone number of our office, at +1-234-567-8900",
+              "synonyms": []
+            },
+            {
+              "id": "PHrnGVVv7G",
+              "name": "Office Hours",
+              "description": "Office hours are Monday to Friday, 9 AM to 5 PM",
+              "synonyms": []
             }
           ],
           "context_variables": [],

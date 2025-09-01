@@ -10214,3 +10214,16 @@ The above exception was the direct cause of the following exception:
 [2m2025-09-01T17:43:30.864173Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
 [2m2025-09-01T17:43:57.731995Z[0m [[32m[1minfo     [0m] [1m[RfQOY0IS1Wd::process] Processing context for session hAX9IpNVDQ finished in 7.102 seconds[0m
 [2m2025-09-01T17:44:19.536251Z[0m [[32m[1minfo     [0m] [1m[R5tNdBi5ra6::process] Processing context for session hAX9IpNVDQ finished in 7.316 seconds[0m
+[2m2025-09-01T17:49:41.026460Z[0m [[33m[1mwarning  [0m] [1m[RE70GKu7zOx] HTTP Request: GET /sessions/hAX9IpNVDQ/events cancelled after 21.299 seconds[0m
+[2m2025-09-01T17:49:41.027348Z[0m [[33m[1mwarning  [0m] [1m[RyjZxy71nco] HTTP Request: GET /sessions/tceKQ9K1HH/events cancelled after 9.827 seconds[0m
+[2m2025-09-01T17:49:41.028949Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
+[2m2025-09-01T17:49:41.037908Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-01T17:49:48.474457Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-01T17:49:48.474718Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\parlant-data'[0m
+[2m2025-09-01T17:49:48.476970Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-01T17:49:49.376417Z[0m [[32m[1minfo     [0m] [1m[<main>] .-----------------------------------------.[0m
+[2m2025-09-01T17:49:49.376892Z[0m [[32m[1minfo     [0m] [1m[<main>] | Server is ready for some serious action |[0m
+[2m2025-09-01T17:49:49.377144Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
+[2m2025-09-01T17:49:49.377387Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
+[2m2025-09-01T17:49:49.377565Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8800[0m
+[2m2025-09-01T17:50:22.973335Z[0m [[32m[1minfo     [0m] [1m[RQiuaLxLxrx::process] Processing context for session UUJrNnL85n finished in 7.627 seconds[0m
