@@ -1,0 +1,18 @@
+{
+  "metadata": [
+    {
+      "id": "CiNImVtEjy",
+      "version": "0.1.0"
+    }
+  ],
+  "customers": [
+    {
+      "id": "970VaeiWoo",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-01T17:43:30.858114+00:00",
+      "name": "Professor",
+      "extra": {}
+    }
+  ],
+  "customer_tag_associations": []
+}
