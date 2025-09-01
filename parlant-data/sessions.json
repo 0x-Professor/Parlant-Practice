@@ -29,6 +29,25 @@
           "journey_paths": {}
         }
       ]
+    },
+    {
+      "id": "tceKQ9K1HH",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:46.752361+00:00",
+      "customer_id": "970VaeiWoo",
+      "agent_id": "8Ah09cwDN4",
+      "mode": "auto",
+      "title": "New Conversation",
+      "consumption_offsets": {
+        "client": 0
+      },
+      "agent_states": [
+        {
+          "correlation_id": "RzZoLjXiZtU::process",
+          "applied_guideline_ids": [],
+          "journey_paths": {}
+        }
+      ]
     }
   ],
   "events": [
@@ -377,6 +396,179 @@
         "data": {}
       },
       "deleted": false
+    },
+    {
+      "id": "XPFWSCvgKg",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:46.789685+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "customer",
+      "kind": "message",
+      "offset": 0,
+      "correlation_id": "RzZoLjXiZtU",
+      "data": {
+        "message": "Hii how re oyu ",
+        "participant": {
+          "id": "970VaeiWoo",
+          "display_name": "Professor"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "pK3IFZ9adF",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:46.792733+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 1,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "mFnwUqXHuk",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:49.568582+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 2,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "9XJq0a3PJ1",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:50.222709+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 3,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "message": "Hi there!",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        },
+        "tags": [
+          "__preamble__"
+        ]
+      },
+      "deleted": false
+    },
+    {
+      "id": "HLzVmoqMyE",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:50.227968+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 4,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "uB5rZIPnl0",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:52.013322+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 5,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "processing",
+        "data": {
+          "stage": "Interpreting"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "zBsu710Y4J",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:53.152509+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 6,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "rR5Gg6uG7M",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:54.244855+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 7,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "message": "I'm doing well, thank you for asking. How can I help you today?",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "Oyvm3kNgBI",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:54.249510+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 8,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "xeYtfSYbAy",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-01T17:40:54.252042+00:00",
+      "session_id": "tceKQ9K1HH",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 9,
+      "correlation_id": "RzZoLjXiZtU::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
     }
   ],
   "inspections": [
@@ -494,6 +686,70 @@
               "id": "8X9GYbr9T7",
               "name": "Office Phone Number",
               "description": "The phone number of our office, at +1-234-567-8900",
+              "synonyms": []
+            }
+          ],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 0.0,
+              "batches": []
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "cOccHiAEPm",
+      "version": "0.6.0",
+      "session_id": "tceKQ9K1HH",
+      "correlation_id": "RzZoLjXiZtU::process",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "CannedResponseDraftSchema",
+              "model": "gemini-2.0-flash",
+              "duration": 1.0818543434143066,
+              "usage": {
+                "input_tokens": 2679,
+                "output_tokens": 57,
+                "extra": null
+              }
+            }
+          ],
+          "generation_names": [
+            "draft"
+          ],
+          "messages": [
+            "I'm doing well, thank you for asking. How can I help you today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [
+            {
+              "id": "8X9GYbr9T7",
+              "name": "Office Phone Number",
+              "description": "The phone number of our office, at +1-234-567-8900",
+              "synonyms": []
+            },
+            {
+              "id": "G5yvu59JyY",
+              "name": "Charles Xavier",
+              "description": "The doctor who specializes in neurology and is available on Mondays and Tuesdays.",
+              "synonyms": [
+                "Professor X"
+              ]
+            },
+            {
+              "id": "PHrnGVVv7G",
+              "name": "Office Hours",
+              "description": "Office hours are Monday to Friday, 9 AM to 5 PM",
               "synonyms": []
             }
           ],
