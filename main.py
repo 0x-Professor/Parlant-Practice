@@ -170,7 +170,7 @@ async def main() -> None:
         return
     
     try:
-        async with p.Server(nlp_service=load_gemini_nlp_service) as server:
+        async with p.Server(nlp_service=load_gemini_nlp_service, session_store="local") as server:
             agent = await server.create_agent(
                 name="Healthcare Agent",
                 description="An empathetic and calming healthcare assistant that helps patients with appointments, information, and basic medical questions.",
