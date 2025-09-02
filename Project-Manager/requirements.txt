@@ -1,0 +1,17 @@
+# Core Parlant Framework
+parlant>=3.0.0
+
+# Google Gemini AI Integration
+google-generativeai>=0.3.0
+
+# Environment and Configuration
+python-dotenv>=1.0.0
+
+# Data Validation and Parsing
+pydantic>=2.0.0
+
+# Async utilities
+asyncio
+
+# Standard library imports (already included in Python)
+# os, json, datetime, typing

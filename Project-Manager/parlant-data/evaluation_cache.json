@@ -1,4 +1,54 @@
 {
-  "guideline_evaluations": [],
-  "journey_evaluations": []
+  "guideline_evaluations": [
+    {
+      "id": "32b86011286b2cc52be83d4f2820095a",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": true,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The user provides the necessary information or actions to list, view, create, close, or reopen GitHub issues using the tools provided by the agent.",
+          "agent_action": "The agent uses the appropriate GitHub issue management tools to help the user."
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "b2d041ccb965341afcee458747148e29",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": true,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The user provides the necessary information or actions to allow the agent to manage pull requests (e.g., specifying which pull request to view, providing details for a new pull request, confirming a merge or close)",
+          "agent_action": "The agent uses the appropriate pull request management tools to list, view, create, merge, or close pull requests based on the user's needs and input."
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    },
+    {
+      "id": "a2d9c65e45322f228afa254aac9c5930",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": true,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": true,
+          "customer_action": "The customer provides the necessary information or responds to questions to allow the agent to provide comprehensive assistance.",
+          "agent_action": "The agent uses development and analysis tools to provide comprehensive assistance based on the information provided by the customer."
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
+    }
+  ],
+  "journey_evaluations": [
+    {
+      "id": "3244779790ffc5d957e2d3671161bdc9",
+      "version": "3.0.1",
+      "node_properties": {},
+      "edge_properties": {}
+    }
+  ]
 }

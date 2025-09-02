@@ -11,3 +11,37 @@
 [2m2025-09-02T17:44:44.406786Z[0m [[33m[1mwarning  [0m] [1m[R6UaUUx2Mqj] HTTP Request: GET /sessions/8eLbtQBguf/events cancelled after 15.11 seconds[0m
 [2m2025-09-02T17:44:44.409551Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
 [2m2025-09-02T17:44:44.419176Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:40:31.880852Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:40:31.881209Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:40:31.883789Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:40:32.757202Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-02T18:40:32.757534Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:40:32.757741Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-02T18:42:23.912719Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:42:23.913023Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:42:23.915747Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:42:24.758339Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-02T18:42:24.758673Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:42:24.758864Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-02T18:43:14.333391Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:43:14.333692Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:43:14.335775Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:47:00.605385Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (4)[0m
+[2m2025-09-02T18:47:00.605876Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:47:31.487938Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:47:31.488179Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:47:31.490291Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:47:42.407317Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (4)[0m
+[2m2025-09-02T18:47:42.408230Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:47:42.408588Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-02T18:51:12.169805Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:51:12.170057Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:51:12.172127Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:51:53.487894Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (5)[0m
+[2m2025-09-02T18:51:53.488340Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T18:51:59.779742Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:51:59.780083Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:51:59.782449Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T18:57:45.075155Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T18:57:45.075455Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T18:57:45.078400Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
