@@ -68,3 +68,21 @@ async def github_merge_pull_request(context: p.ToolContext, pr_id: int) -> p.Too
     # Simulate merging a pull request in a GitHub repository
     return p.ToolResult(data={"id": pr_id, "status": "merged"}, control={"lifespan": "session"})
 
+@p.tool
+async def github_close_pull_request(context: p.ToolContext, pr_id: int) -> p.ToolResult:
+    # Simulate closing a pull request in a GitHub repository
+    return p.ToolResult(data={"id": pr_id, "status": "closed"}, control={"lifespan": "session"})
+
+@p.tool
+async def sandbox_run_tests(context: p.ToolContext, repo: str, commit_sha: str, test_selector: Optional[str] = None) -> p.ToolResult:
+    # stub: simulate running tests; in prod, orchestrator would run containerized tests and return results safely
+    results = {"success": False, "failed_tests": ["tests/test_parser.py::test_empty_input"], "log_url": "https://internal-logs.example/run/12345"}
+    return p.ToolResult(data=results, control={"lifespan": "response"})
+@p.tool
+async def vector_retriever_search(context: p.ToolContext, query: str, top_k: int = 5) -> p.ToolResult:
+    # stub: semantic search results from vector DB
+    hits = [
+        {"id": "doc-1", "score": 0.98, "snippet": "Parsing behavior: empty input returns None"},
+        {"id": "doc-2", "score": 0.85, "snippet": "How to reproduce crash with empty payload..."},
+    ]
+    return p.ToolResult(data={"hits": hits}, control={"lifespan": "response"})
