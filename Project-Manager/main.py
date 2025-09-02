@@ -134,7 +134,27 @@ async def main() -> None:
                 action = "Fetch issue details",
                 tools = [github_get_issue_details]
             )
-            
+            await dev_agent.create_guidelines(
+                condition= "if user request to get pull request details",
+                action = "Fetch pull request details",
+                tools = [github_get_pull_request_details]
+            )
+            await dev_agent.create_guidelines(
+                condition= "if user request to search documentation",
+                action = "Search documentation",
+                tools = [vector_retriever_search]
+            )
+            await dev_agent.create_guidelines(
+                condition = "If user to create an issue",
+                action = "Ask the user for issue title and description",
+                tools = [github_create_issue]
+            )
+            await dev_agent.create_guidelines(
+                condition = "If user ask to fetch the issue details",
+                action = "Fetch issue details",
+                tools = [github_get_issue_details]
+                
+            )
 
     except Exception as e:
         print(f"An error occurred: {e}")
