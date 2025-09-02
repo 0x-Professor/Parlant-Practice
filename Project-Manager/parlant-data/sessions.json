@@ -1,0 +1,270 @@
+{
+  "metadata": [
+    {
+      "id": "2c90ZSZBIW",
+      "version": "0.6.0"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "8eLbtQBguf",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:21.705317+00:00",
+      "customer_id": "970VaeiWoo",
+      "agent_id": "8Ah09cwDN4",
+      "mode": "auto",
+      "title": "New Conversation",
+      "consumption_offsets": {
+        "client": 0
+      },
+      "agent_states": [
+        {
+          "correlation_id": "R5tTLuLRTtj::process",
+          "applied_guideline_ids": [],
+          "journey_paths": {}
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "QN9c6Y4LBG",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:21.754474+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "customer",
+      "kind": "message",
+      "offset": 0,
+      "correlation_id": "R5tTLuLRTtj",
+      "data": {
+        "message": "hi",
+        "participant": {
+          "id": "970VaeiWoo",
+          "display_name": "Professor"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "n2j9VjfVX7",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:21.759332+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 1,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "gb6nuCnEsC",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:24.162264+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 2,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "9D9hpCe0Ve",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:24.897859+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 3,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "message": "Hello.",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        },
+        "tags": [
+          "__preamble__"
+        ]
+      },
+      "deleted": false
+    },
+    {
+      "id": "Q46Z6fenlE",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:24.908190+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 4,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "cJom0FmT72",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:26.741317+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 5,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "processing",
+        "data": {
+          "stage": "Interpreting"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "i8tAD1s8hb",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:27.913262+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 6,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "5wdnRPHKW0",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:29.207801+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 7,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "message": "How can I help you today?",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "NPbbC1tpZ4",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:29.210226+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 8,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "Ykd34FZJxH",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:44:29.212992+00:00",
+      "session_id": "8eLbtQBguf",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 9,
+      "correlation_id": "R5tTLuLRTtj::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    }
+  ],
+  "inspections": [
+    {
+      "id": "gejL4Gxkk2",
+      "version": "0.6.0",
+      "session_id": "8eLbtQBguf",
+      "correlation_id": "R5tTLuLRTtj::process",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "CannedResponseDraftSchema",
+              "model": "gemini-2.0-flash",
+              "duration": 1.288327693939209,
+              "usage": {
+                "input_tokens": 2669,
+                "output_tokens": 44,
+                "extra": null
+              }
+            }
+          ],
+          "generation_names": [
+            "draft"
+          ],
+          "messages": [
+            "How can I help you today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [
+            {
+              "id": "G5yvu59JyY",
+              "name": "Charles Xavier",
+              "description": "The doctor who specializes in neurology and is available on Mondays and Tuesdays.",
+              "synonyms": [
+                "Professor X"
+              ]
+            },
+            {
+              "id": "PHrnGVVv7G",
+              "name": "Office Hours",
+              "description": "Office hours are Monday to Friday, 9 AM to 5 PM",
+              "synonyms": []
+            },
+            {
+              "id": "8X9GYbr9T7",
+              "name": "Office Phone Number",
+              "description": "The phone number of our office, at +1-234-567-8900",
+              "synonyms": []
+            }
+          ],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 0.0,
+              "batches": []
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": [
+    {
+      "id": "RgrpGzt7YW",
+      "version": "0.1.0"
+    }
+  ],
+  "customers": [
+    {
+      "id": "970VaeiWoo",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:44:09.854466+00:00",
+      "name": "Professor",
+      "extra": {}
+    },
+    {
+      "id": "Pz05iIwvvY",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:44:09.855879+00:00",
+      "name": "VIP Patient",
+      "extra": {}
+    }
+  ],
+  "customer_tag_associations": [
+    {
+      "id": "rOTvDEyS8L",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:44:09.855879+00:00",
+      "customer_id": "Pz05iIwvvY",
+      "tag_id": "FUpPLArBVx"
+    }
+  ]
+}
