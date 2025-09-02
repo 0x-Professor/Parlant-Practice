@@ -91,6 +91,25 @@
           "journey_paths": {}
         }
       ]
+    },
+    {
+      "id": "pk9VW5yUBU",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:33:56.811279+00:00",
+      "customer_id": "Pz05iIwvvY",
+      "agent_id": "8Ah09cwDN4",
+      "mode": "auto",
+      "title": "New Conversation",
+      "consumption_offsets": {
+        "client": 0
+      },
+      "agent_states": [
+        {
+          "correlation_id": "RAYVvGdkhT2::process",
+          "applied_guideline_ids": [],
+          "journey_paths": {}
+        }
+      ]
     }
   ],
   "events": [
@@ -1131,6 +1150,179 @@
         "data": {}
       },
       "deleted": false
+    },
+    {
+      "id": "WHs7iggqsa",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:33:56.864503+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "customer",
+      "kind": "message",
+      "offset": 0,
+      "correlation_id": "RAYVvGdkhT2",
+      "data": {
+        "message": "hiii",
+        "participant": {
+          "id": "Pz05iIwvvY",
+          "display_name": "VIP Patient"
+        },
+        "flagged": false,
+        "tags": []
+      },
+      "deleted": false
+    },
+    {
+      "id": "RsBzDJUiuU",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:33:56.868938+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 1,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "acknowledged",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "1ZXwOoSB8Q",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:33:59.895545+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 2,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "fBDri8R1Kz",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:00.733125+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 3,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "message": "Hi there!",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        },
+        "tags": [
+          "__preamble__"
+        ]
+      },
+      "deleted": false
+    },
+    {
+      "id": "iL6SGRbYKm",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:00.742387+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 4,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "85s1g3WyUt",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:02.386540+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 5,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "processing",
+        "data": {
+          "stage": "Interpreting"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "NIoNEGC8lI",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:03.503754+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 6,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "typing",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "1KjsG2eymg",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:04.711372+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "message",
+      "offset": 7,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "message": "How can I help you today?",
+        "participant": {
+          "id": "8Ah09cwDN4",
+          "display_name": "Healthcare Agent"
+        }
+      },
+      "deleted": false
+    },
+    {
+      "id": "9MRcAAUga7",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:04.714119+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 8,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 0,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
+    },
+    {
+      "id": "5zRmR42BpU",
+      "version": "0.6.0",
+      "creation_utc": "2025-09-02T17:34:04.716990+00:00",
+      "session_id": "pk9VW5yUBU",
+      "source": "ai_agent",
+      "kind": "status",
+      "offset": 9,
+      "correlation_id": "RAYVvGdkhT2::process",
+      "data": {
+        "acknowledged_offset": 3,
+        "status": "ready",
+        "data": {}
+      },
+      "deleted": false
     }
   ],
   "inspections": [
@@ -1504,6 +1696,70 @@
               "id": "PHrnGVVv7G",
               "name": "Office Hours",
               "description": "Office hours are Monday to Friday, 9 AM to 5 PM",
+              "synonyms": []
+            }
+          ],
+          "context_variables": [],
+          "generations": {
+            "guideline_match": {
+              "total_duration": 0.0,
+              "batches": []
+            },
+            "tool_calls": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "rR8ZLFaghK",
+      "version": "0.6.0",
+      "session_id": "pk9VW5yUBU",
+      "correlation_id": "RAYVvGdkhT2::process",
+      "message_generations": [
+        {
+          "generations": [
+            {
+              "schema_name": "CannedResponseDraftSchema",
+              "model": "gemini-2.0-flash",
+              "duration": 1.2015860080718994,
+              "usage": {
+                "input_tokens": 2674,
+                "output_tokens": 45,
+                "extra": null
+              }
+            }
+          ],
+          "generation_names": [
+            "draft"
+          ],
+          "messages": [
+            "How can I help you today?"
+          ]
+        }
+      ],
+      "preparation_iterations": [
+        {
+          "guideline_matches": [],
+          "tool_calls": [],
+          "terms": [
+            {
+              "id": "PHrnGVVv7G",
+              "name": "Office Hours",
+              "description": "Office hours are Monday to Friday, 9 AM to 5 PM",
+              "synonyms": []
+            },
+            {
+              "id": "G5yvu59JyY",
+              "name": "Charles Xavier",
+              "description": "The doctor who specializes in neurology and is available on Mondays and Tuesdays.",
+              "synonyms": [
+                "Professor X"
+              ]
+            },
+            {
+              "id": "8X9GYbr9T7",
+              "name": "Office Phone Number",
+              "description": "The phone number of our office, at +1-234-567-8900",
               "synonyms": []
             }
           ],

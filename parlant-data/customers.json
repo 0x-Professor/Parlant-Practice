@@ -26,13 +26,34 @@
       "creation_utc": "2025-09-01T17:49:49.371706+00:00",
       "name": "VIP Patient",
       "extra": {}
+    },
+    {
+      "id": "970VaeiWoo",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:33:43.372582+00:00",
+      "name": "Professor",
+      "extra": {}
+    },
+    {
+      "id": "Pz05iIwvvY",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:33:43.374277+00:00",
+      "name": "VIP Patient",
+      "extra": {}
     }
   ],
   "customer_tag_associations": [
     {
       "id": "rOTvDEyS8L",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "creation_utc": "2025-09-01T17:49:49.371706+00:00",
+      "customer_id": "Pz05iIwvvY",
+      "tag_id": "FUpPLArBVx"
+    },
+    {
+      "id": "rOTvDEyS8L",
+      "version": "0.1.0",
+      "creation_utc": "2025-09-02T17:33:43.374277+00:00",
       "customer_id": "Pz05iIwvvY",
       "tag_id": "FUpPLArBVx"
     }
