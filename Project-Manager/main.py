@@ -20,4 +20,15 @@ async def github_list_open_issues(context: p.ToolContext, repo: str) -> p.ToolRe
     return p.ToolResult(data={"count": len(issues), "issues": issues}, control={"lifespan": "session"})
 
 
-    
+@p.tool
+async def github_get_issue_details(context: p.ToolContext, issue_id: int) -> p.ToolResult:
+    # Simulate fetching details of an issue from a GitHub repository
+    issue = {"id": issue_id, "title": "Bug in authentication", "status": "open", "description": "Detailed description of the issue."}
+    return p.ToolResult(data=issue, control={"lifespan": "session"})
+
+@p.tool
+async def github_create_issue(context: p.ToolContext, title: str, description: str) -> p.ToolResult:
+    # Simulate creating a new issue in a GitHub repository
+    new_issue = {"id": 3, "title": title, "status": "open", "description": description}
+    return p.ToolResult(data=new_issue, control={"lifespan": "session"})
+
