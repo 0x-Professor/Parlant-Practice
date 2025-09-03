@@ -974,14 +974,6 @@ async def main() -> None:
                 action="Acknowledge the time constraint and prioritize the most critical tasks. Provide efficient solutions and clear timelines."
             )
             
-            # # Optional: Add a simple CLI interface for testing
-            # while True:
-            #     try:
-            #         await asyncio.sleep(1)
-            #     except KeyboardInterrupt:
-            #         print("\n Shutting down GitHub Project Manager Agent...")
-            #         break
-                    
     except Exception as e:
         print(f" An error occurred: {e}")
         import traceback
