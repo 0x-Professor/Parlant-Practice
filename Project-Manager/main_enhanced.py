@@ -909,52 +909,43 @@ async def main() -> None:
                 template="Great! I've completed that task. Here's a summary of what I did: {{generative.task_summary}}"
             )
             
-            # Create comprehensive journeys
-            issue_journey = await create_issue_management_journey(agent)
-            pr_journey = await create_pull_request_management_journey(agent)
-            ci_journey = await create_ci_cd_troubleshooting_journey(agent)
-            review_journey = await create_code_review_journey(agent)
-            
-            print(f" Created Issue Management Journey: {issue_journey.id}")
-            print(f" Created Pull Request Journey: {pr_journey.id}")
-            print(f" Created CI/CD Troubleshooting Journey: {ci_journey.id}")
-            print(f" Created Code Review Journey: {review_journey.id}")
+    
             
             # Create essential variables for context management
             await agent.create_variable(
                 name="repo_name",
                 description="The current repository name being worked on",
-                initial_value="my-project-repo"
+                
             )
             
             await agent.create_variable(
                 name="current_branch", 
                 description="The current git branch",
-                initial_value="main"
+                
             )
             
             await agent.create_variable(
                 name="commit_sha",
                 description="The latest commit SHA for testing",
-                initial_value="latest"
+                
             )
             
             await agent.create_variable(
                 name="environment",
                 description="Current deployment environment (dev, staging, production)",
-                initial_value="dev"
+                
             )
             
             await agent.create_variable(
                 name="user_role",
                 description="The role of the current user (developer, reviewer, manager)",
-                initial_value="developer"
+                
             )
             
             await agent.create_variable(
                 name="project_priority",
                 description="Current project priority level",
-                initial_value="medium"
+                
             )
             
             # Create guidelines for agent behavior

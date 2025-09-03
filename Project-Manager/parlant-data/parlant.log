@@ -141,3 +141,119 @@
 [2m2025-09-03T17:40:47.059600Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(7C0FzsgY6o)'[0m
 [2m2025-09-03T17:40:47.060491Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(KOVakvVNc7)'[0m
 [2m2025-09-03T17:40:47.061361Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(oSahP4h03k)'[0m
+[2m2025-09-03T17:44:46.108895Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (35)[0m
+[2m2025-09-03T17:44:46.109603Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T17:44:56.556010Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:44:56.556404Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:44:56.559918Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:44:56.589669Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'websocket-logger'[0m
+[2m2025-09-03T17:44:57.732189Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to list, view, create, close, or reopen GitHub issues; Action: Use the appropriate GitHub issue management tools to help the user[0m
+[2m2025-09-03T17:44:57.733082Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to work with pull requests - list, view, create, merge, or close PRs; Action: Use the appropriate pull request management tools to assist the user[0m
+[2m2025-09-03T17:44:57.733497Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User needs help with testing, CI/CD, code analysis, or deployment status; Action: Use development and analysis tools to provide comprehensive assistance[0m
+[2m2025-09-03T17:44:57.733925Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to manage GitHub issues, Action: None[0m
+[2m2025-09-03T17:44:57.734289Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User mentions bug reports, Action: None[0m
+[2m2025-09-03T17:44:57.734634Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User needs help with issue tracking, Action: None[0m
+[2m2025-09-03T17:44:57.734928Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to work with pull requests, Action: None[0m
+[2m2025-09-03T17:44:57.735211Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User mentions PR, Action: None[0m
+[2m2025-09-03T17:44:57.735493Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to merge code, Action: None[0m
+[2m2025-09-03T17:44:57.735764Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: Tests are failing, Action: None[0m
+[2m2025-09-03T17:44:57.736079Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: CI pipeline is broken, Action: None[0m
+[2m2025-09-03T17:44:57.736444Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User reports build failures, Action: None[0m
+[2m2025-09-03T17:44:57.736797Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: Deployment issues, Action: None[0m
+[2m2025-09-03T17:44:57.737072Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Ask user what they want to do with GitHub issues (create, view, update, close)[0m
+[2m2025-09-03T17:44:57.737345Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to create a new issue, Action: Ask for the issue title and description[0m
+[2m2025-09-03T17:44:57.737666Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Use the tool github_create_issue[0m
+[2m2025-09-03T17:44:57.737951Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Confirm the issue has been created successfully and ask if they need anything else[0m
+[2m2025-09-03T17:44:57.738224Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to view existing issues, Action: Use the tool github_list_open_issues[0m
+[2m2025-09-03T17:44:57.738503Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Show the list of open issues and ask if they want details on any specific issue[0m
+[2m2025-09-03T17:44:57.738777Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to close an issue, Action: Ask for the issue ID to close[0m
+[2m2025-09-03T17:44:57.739048Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Use the tool github_close_issue[0m
+[2m2025-09-03T17:44:57.739320Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Confirm the issue has been closed and ask if they need help with anything else[0m
+[2m2025-09-03T17:44:57.739592Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Ask what they want to do with pull requests (create, view, merge, close)[0m
+[2m2025-09-03T17:44:57.739921Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to create a pull request, Action: Ask for PR title, description, source branch, and target branch[0m
+[2m2025-09-03T17:44:57.740226Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Use the tool github_create_pull_request[0m
+[2m2025-09-03T17:44:57.740629Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Confirm PR creation and provide next steps for review[0m
+[2m2025-09-03T17:44:57.741012Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to view pull requests, Action: Use the tool github_list_pull_requests[0m
+[2m2025-09-03T17:44:57.741438Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Present the list of PRs and offer to show details or perform actions[0m
+[2m2025-09-03T17:44:57.742037Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User wants to merge a pull request, Action: Ask for PR ID and confirm merge action[0m
+[2m2025-09-03T17:44:57.742556Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Use the tool github_merge_pull_request[0m
+[2m2025-09-03T17:44:57.743014Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Confirm successful merge and suggest next steps[0m
+[2m2025-09-03T17:44:57.743507Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Acknowledge the CI/CD issue and ask for repository and commit details[0m
+[2m2025-09-03T17:44:57.743990Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: None, Action: Use the tool sandbox_run_tests[0m
+[2m2025-09-03T17:44:57.744495Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: Tests pass successfully, Action: Inform that all tests are passing and suggest checking deployment status[0m
+[2m2025-09-03T17:44:57.744977Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating journey: Title: Issue Management[0m
+[2m2025-09-03T17:44:57.745355Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating journey: Title: Pull Request Management[0m
+[2m2025-09-03T17:44:57.745814Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating journey: Title: CI/CD Troubleshooting[0m
+[2m2025-09-03T17:44:57.746717Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(0s3zpx7skC)'[0m
+[2m2025-09-03T17:44:57.747294Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(ttlZKotuet)'[0m
+[2m2025-09-03T17:44:57.747997Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(azsZkVlF61)'[0m
+[2m2025-09-03T17:44:57.748406Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(omq6vwT5ji)'[0m
+[2m2025-09-03T17:44:57.748812Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(UD4MR4Sr1F)'[0m
+[2m2025-09-03T17:44:57.749326Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(cdlKVjKEsz)'[0m
+[2m2025-09-03T17:44:57.749797Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(8ZHYdMyXRh)'[0m
+[2m2025-09-03T17:44:57.750191Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(VOQQlxkaFi)'[0m
+[2m2025-09-03T17:44:57.750634Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(foZcHKM5Yv)'[0m
+[2m2025-09-03T17:44:57.751072Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(sNqxAOhIus)'[0m
+[2m2025-09-03T17:44:57.751656Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(uLa1Ebf32s)'[0m
+[2m2025-09-03T17:44:57.752332Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(e21SIi7zkO)'[0m
+[2m2025-09-03T17:44:57.752893Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(CEr0RnK8fT)'[0m
+[2m2025-09-03T17:44:57.753274Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(xkK5WRv4hh)'[0m
+[2m2025-09-03T17:44:57.753681Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(JdYGZQJdFd)'[0m
+[2m2025-09-03T17:44:57.754021Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(gts2MpYI6F)'[0m
+[2m2025-09-03T17:44:57.754391Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(OXobT5kiuM)'[0m
+[2m2025-09-03T17:44:57.754726Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(nLiqYvL7vw)'[0m
+[2m2025-09-03T17:44:57.755095Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(jQ7Zsh5OzC)'[0m
+[2m2025-09-03T17:44:57.755522Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(brGkEBeWmd)'[0m
+[2m2025-09-03T17:44:57.755876Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(YRnJ05zyMI)'[0m
+[2m2025-09-03T17:44:57.756339Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(cNIaYdV9oJ)'[0m
+[2m2025-09-03T17:44:57.756778Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(mC9QRt7Opo)'[0m
+[2m2025-09-03T17:44:57.757325Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(uqfilA3wKu)'[0m
+[2m2025-09-03T17:44:57.757677Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(pHdaqXWfu1)'[0m
+[2m2025-09-03T17:44:57.758014Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(bah618mEEf)'[0m
+[2m2025-09-03T17:44:57.758686Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(Y7IKLPs7yA)'[0m
+[2m2025-09-03T17:44:57.759299Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(VRXxfa2SeM)'[0m
+[2m2025-09-03T17:44:57.759949Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(cm4W8NVtyP)'[0m
+[2m2025-09-03T17:44:57.760613Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(7JrF09ljrs)'[0m
+[2m2025-09-03T17:44:57.761350Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(G54pxnwG9Z)'[0m
+[2m2025-09-03T17:44:57.761980Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(bv19YSyfAa)'[0m
+[2m2025-09-03T17:44:57.762408Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(r14ScBeiUt)'[0m
+[2m2025-09-03T17:44:57.762828Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(DJ9TlgxM5g)'[0m
+[2m2025-09-03T17:54:57.092260Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:54:57.092630Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:54:57.095941Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:54:58.002743Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-03T17:54:58.003409Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T17:55:17.163009Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (35)[0m
+[2m2025-09-03T17:55:17.163882Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T17:55:25.329844Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:55:25.330224Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:55:25.333730Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:55:26.532475Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-03T17:55:26.533228Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T17:55:26.533553Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-03T17:58:16.379865Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:58:16.380254Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:58:16.383490Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:59:22.967610Z[0m [[32m[1minfo     [0m] [1m[<main>] .-----------------------------------------.[0m
+[2m2025-09-03T17:59:22.968242Z[0m [[32m[1minfo     [0m] [1m[<main>] | Server is ready for some serious action |[0m
+[2m2025-09-03T17:59:22.968574Z[0m [[32m[1minfo     [0m] [1m[<main>] '-----------------------------------------'[0m
+[2m2025-09-03T17:59:22.968918Z[0m [[32m[1minfo     [0m] [1m[<main>] Server authorization policy: development[0m
+[2m2025-09-03T17:59:22.969191Z[0m [[32m[1minfo     [0m] [1m[<main>] Try the Sandbox UI at http://localhost:8802[0m
+[2m2025-09-03T17:59:48.839470Z[0m [[32m[1minfo     [0m] [1m[R53RztFluj8::process] Processing context for session 0AhIgOiX0q finished in 6.617 seconds[0m
+[2m2025-09-03T18:00:02.584077Z[0m [[33m[1mwarning  [0m] [1m[RxTgQaLVNDI] HTTP Request: GET /sessions/0AhIgOiX0q/events cancelled after 13.683 seconds[0m
+[2m2025-09-03T18:00:02.585324Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (2)[0m
+[2m2025-09-03T18:00:02.611571Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T18:01:13.996393Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T18:01:13.997071Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T18:01:14.000750Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T18:01:14.014977Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'websocket-logger'[0m
+[2m2025-09-03T18:01:15.335444Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to list, view, create, close, or reopen GitHub issues; Action: Use the appropriate GitHub issue management tools to help the user[0m
+[2m2025-09-03T18:01:15.336119Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to work with pull requests - list, view, create, merge, or close PRs; Action: Use the appropriate pull request management tools to assist the user[0m
+[2m2025-09-03T18:01:15.336499Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User needs help with testing, CI/CD, code analysis, or deployment status; Action: Use development and analysis tools to provide comprehensive assistance[0m
+[2m2025-09-03T18:01:15.354081Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-03T18:01:15.354516Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T18:01:15.354863Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-03T18:02:05.058905Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T18:02:05.059346Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T18:02:05.062945Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T18:02:05.076100Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'websocket-logger'[0m

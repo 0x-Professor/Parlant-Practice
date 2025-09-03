@@ -41,6 +41,20 @@
         "agent_intention_condition": null,
         "internal_action": null
       }
+    },
+    {
+      "id": "2977b908311e491de51e74852b40e2f7",
+      "version": "3.0.1",
+      "properties": {
+        "continuous": false,
+        "customer_dependent_action_data": {
+          "is_customer_dependent": false,
+          "customer_action": "",
+          "agent_action": ""
+        },
+        "agent_intention_condition": null,
+        "internal_action": null
+      }
     }
   ],
   "journey_evaluations": [
