@@ -999,7 +999,7 @@ async def main() -> None:
                     break
                     
     except Exception as e:
-        print(f"❌ An error occurred: {e}")
+        print(f" An error occurred: {e}")
         import traceback
         traceback.print_exc()
 
