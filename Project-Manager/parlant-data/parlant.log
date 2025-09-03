@@ -50,3 +50,17 @@
 [2m2025-09-02T19:01:09.544599Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
 [2m2025-09-02T19:01:09.545044Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
 [2m2025-09-02T19:01:09.548159Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-02T19:16:05.343799Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (35)[0m
+[2m2025-09-02T19:16:05.344735Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-02T19:16:31.486317Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-02T19:16:31.486729Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-02T19:16:31.489830Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:35:50.224230Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:35:50.224934Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:35:50.231675Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T17:35:52.084831Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (1)[0m
+[2m2025-09-03T17:35:52.085540Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T17:35:52.085981Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Waiting for task 'websocket-logger' to finish[0m
+[2m2025-09-03T17:37:03.451898Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T17:37:03.452598Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T17:37:03.457322Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m

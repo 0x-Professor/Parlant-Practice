@@ -96,19 +96,7 @@ async def main() -> None:
             dev_agent = await server.create_agent(
                 name="Dev Agent For Github",
                 description="Developer assistant: diagnoses CI failures, runs tests in sandbox, suggests fixes and creates PR drafts.",
-                tools=[
-                    github_list_open_issues,
-                    github_get_issue_details,
-                    github_create_issue,
-                    github_reopen_issue,
-                    github_list_pull_requests,
-                    github_get_pull_request_details,
-                    github_create_pull_request,
-                    github_merge_pull_request,
-                    github_close_pull_request,
-                    sandbox_run_tests,
-                    vector_retriever_search,
-                ],
+                    
             )
             await dev_agent.create_variable(name = "repo_name", initial_value="my-repo")
             await dev_agent.create_variable(name = "commit_sha", initial_value="main")
