@@ -974,29 +974,13 @@ async def main() -> None:
                 action="Acknowledge the time constraint and prioritize the most critical tasks. Provide efficient solutions and clear timelines."
             )
             
-            print("Agent created with comprehensive tools, journeys, and canned responses")
-            print("Variables and guidelines configured")
-            print("\n GitHub Project Manager Agent is ready!")
-            print(" Available features:")
-            print("   • Issue Management (create, view, update, close)")
-            print("   • Pull Request Management (create, review, merge)")
-            print("   • CI/CD Troubleshooting (test execution, failure analysis)")
-            print("   • Code Review Assistance (quality analysis, recommendations)")
-            print("   • Smart context awareness with variables")
-            print("   • Structured conversation flows with journeys")
-            print("   • Professional responses with canned templates")
-            
-            # Keep the server running
-            print(f"\n The agent is now running and ready to help!")
-            print("   You can interact with it through the Parlant interface.")
-            
-            # Optional: Add a simple CLI interface for testing
-            while True:
-                try:
-                    await asyncio.sleep(1)
-                except KeyboardInterrupt:
-                    print("\n Shutting down GitHub Project Manager Agent...")
-                    break
+            # # Optional: Add a simple CLI interface for testing
+            # while True:
+            #     try:
+            #         await asyncio.sleep(1)
+            #     except KeyboardInterrupt:
+            #         print("\n Shutting down GitHub Project Manager Agent...")
+            #         break
                     
     except Exception as e:
         print(f" An error occurred: {e}")
