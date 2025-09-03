@@ -767,7 +767,8 @@ async def main() -> None:
         async with p.Server(
             nlp_service=load_gemini_nlp_service,
             session_store="local",
-            customer_store="local"
+            customer_store="local",
+            log_level=p.LogLevel.TRACE
         ) as server:
             
             # Create the main developer agent with enhanced capabilities
@@ -914,10 +915,10 @@ async def main() -> None:
             ci_journey = await create_ci_cd_troubleshooting_journey(agent)
             review_journey = await create_code_review_journey(agent)
             
-            print(f"✅ Created Issue Management Journey: {issue_journey.id}")
-            print(f"✅ Created Pull Request Journey: {pr_journey.id}")
-            print(f"✅ Created CI/CD Troubleshooting Journey: {ci_journey.id}")
-            print(f"✅ Created Code Review Journey: {review_journey.id}")
+            print(f" Created Issue Management Journey: {issue_journey.id}")
+            print(f" Created Pull Request Journey: {pr_journey.id}")
+            print(f" Created CI/CD Troubleshooting Journey: {ci_journey.id}")
+            print(f" Created Code Review Journey: {review_journey.id}")
             
             # Create essential variables for context management
             await agent.create_variable(
@@ -982,10 +983,10 @@ async def main() -> None:
                 action="Acknowledge the time constraint and prioritize the most critical tasks. Provide efficient solutions and clear timelines."
             )
             
-            print("✅ Agent created with comprehensive tools, journeys, and canned responses")
-            print("✅ Variables and guidelines configured")
-            print("\n🚀 GitHub Project Manager Agent is ready!")
-            print("📊 Available features:")
+            print("Agent created with comprehensive tools, journeys, and canned responses")
+            print("Variables and guidelines configured")
+            print("\n GitHub Project Manager Agent is ready!")
+            print(" Available features:")
             print("   • Issue Management (create, view, update, close)")
             print("   • Pull Request Management (create, review, merge)")
             print("   • CI/CD Troubleshooting (test execution, failure analysis)")
@@ -995,7 +996,7 @@ async def main() -> None:
             print("   • Professional responses with canned templates")
             
             # Keep the server running
-            print(f"\n💡 The agent is now running and ready to help!")
+            print(f"\n The agent is now running and ready to help!")
             print("   You can interact with it through the Parlant interface.")
             
             # Optional: Add a simple CLI interface for testing
@@ -1003,7 +1004,7 @@ async def main() -> None:
                 try:
                     await asyncio.sleep(1)
                 except KeyboardInterrupt:
-                    print("\n👋 Shutting down GitHub Project Manager Agent...")
+                    print("\n Shutting down GitHub Project Manager Agent...")
                     break
                     
     except Exception as e:
