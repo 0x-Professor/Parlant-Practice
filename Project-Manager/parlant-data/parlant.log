@@ -287,3 +287,22 @@
 [2m2025-09-03T18:12:24.819468Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(XUrK8uwfzM)'[0m
 [2m2025-09-03T18:12:24.819982Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(DtvrGE18qO)'[0m
 [2m2025-09-03T18:12:24.820421Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(zGjtKFYmkN)'[0m
+[2m2025-09-03T18:31:32.296327Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Cancelling all remaining tasks (6)[0m
+[2m2025-09-03T18:31:32.296793Z[0m [[32m[1minfo     [0m] [1m[<main>] BackgroundTaskService: Shutting down[0m
+[2m2025-09-03T18:31:41.864787Z[0m [[32m[1minfo     [0m] [1m[<main>] Parlant server version 3.0.1[0m
+[2m2025-09-03T18:31:41.865217Z[0m [[32m[1minfo     [0m] [1m[<main>] Using home directory 'U:\Parlant-Practice\starter\Project-Manager\parlant-data'[0m
+[2m2025-09-03T18:31:41.868838Z[0m [[32m[1minfo     [0m] [1m[<main>] No external modules selected[0m
+[2m2025-09-03T18:31:41.882528Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'websocket-logger'[0m
+[2m2025-09-03T18:31:43.249099Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to list, view, create, close, or reopen GitHub issues; Action: Use the appropriate GitHub issue management tools to help the user[0m
+[2m2025-09-03T18:31:43.249711Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User wants to work with pull requests - list, view, create, merge, or close PRs; Action: Use the appropriate pull request management tools to assist the user[0m
+[2m2025-09-03T18:31:43.250230Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Using cached evaluation for guideline: Condition: User needs help with testing, CI/CD, code analysis, or deployment status; Action: Use development and analysis tools to provide comprehensive assistance[0m
+[2m2025-09-03T18:31:43.250628Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User asks for help or seems confused, Action: Be helpful and provide clear, actionable guidance. Offer specific next steps and ask clarifying questions if needed.[0m
+[2m2025-09-03T18:31:43.251051Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: A critical error or security issue is detected, Action: Immediately highlight the severity, provide clear explanations, and suggest urgent remediation steps.[0m
+[2m2025-09-03T18:31:43.251401Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User requests information about tests or CI/CD, Action: Always run the actual tests or checks first, then provide detailed analysis of the results with actionable recommendations.[0m
+[2m2025-09-03T18:31:43.251711Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: Multiple issues or PRs are found, Action: Present information in a clear, organized manner and offer to help with specific items. Ask what the user wants to prioritize.[0m
+[2m2025-09-03T18:31:43.252097Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] Evaluating guideline: Condition: User mentions deadlines or urgency, Action: Acknowledge the time constraint and prioritize the most critical tasks. Provide efficient solutions and clear timelines.[0m
+[2m2025-09-03T18:31:43.252661Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(vVEbjVeX7H)'[0m
+[2m2025-09-03T18:31:43.253151Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(pxRuDYq6Eh)'[0m
+[2m2025-09-03T18:31:43.253867Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(qLNaFYPlMt)'[0m
+[2m2025-09-03T18:31:43.254437Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(M2jZaZ3CWO)'[0m
+[2m2025-09-03T18:31:43.255121Z[0m [[32m[1mdebug    [0m] [1mTRACE [<main>] BackgroundTaskService: Starting task 'evaluation(PWXC8kjU4l)'[0m
